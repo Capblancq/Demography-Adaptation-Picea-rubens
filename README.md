@@ -6,6 +6,8 @@ Started 01-09-2019
 
 2/ File ??? is the bash script used to map the whole exome sequencing data against the reference and call the variants.
 
-3/ File ?? is the R script used to analyse the SNPs 
+3/ File ?? is the R script used to analyse the SNPs obtained from the WES experiment
+
+.....
 
 

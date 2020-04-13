@@ -1,6 +1,8 @@
 #################################################
 ##### Whole Exome Sequencing data treatment #####
 
+#!/bin/bash
+
 ### Creating the reference for WES data mapping
 
 # Listing the scaffolds of the Picea glauca genome containing at least one of the probes used for WES 

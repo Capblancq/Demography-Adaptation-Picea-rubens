@@ -1,14 +1,10 @@
 ### Red Spruce project 
 ----------------------
 
-Started 01-09-2019
+Started 01-09-2019 
+Finished --
 
-1. File "ReferenceProduction.txt" summarizes the way we created the reference used for the whole exome sequencing data mapping.
+1. Whole Exome Sequencing experiment on 340 individuals of red spruce across the species range. Estimation of genomic parameters (LD, genetic diversity, Fst, PCA...) from genotype likelihoods.
 
-2. File "WES_mapping.sh" is the bash script used to map the whole exome sequencing data against the reference with bwa, stampy and NGM mappers.
-
-3. File ?? is the R script used to analyse the SNPs obtained from the WES experiment
-
-.....
-
+2. 
 

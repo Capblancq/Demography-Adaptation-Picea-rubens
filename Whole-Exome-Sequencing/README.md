@@ -1,4 +1,4 @@
-### Whole exome sequencing with red spruce 
+### Whole exome sequencing reveals a long-term decline in effective population size of red spruce (Picea rubens)
 ---------------------
 
 This repository gathers the scripts used to conduct the analyses and produce the figures of the study described in Capblancq et al. 2020, Evolutionary Applications (DOI: ??):

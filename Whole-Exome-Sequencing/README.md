@@ -1,7 +1,9 @@
 ### Whole exome sequencing with red spruce 
 ---------------------
 
-1. ReferenceProduction.sh describes the way we created the reference used for mapping the reads.
+This repository gathers the scripts used to conduct the analyses and produce the figures of the study described in Capblancq et al. 2020, Evolutionary Applications (DOI: ??):
+
+1. ReferenceProduction.sh describes the way we created the reduced reference used for mapping the reads
 
 2. Mapping_reads.sh describes how we mapped the reads and produced the quality statistics
 

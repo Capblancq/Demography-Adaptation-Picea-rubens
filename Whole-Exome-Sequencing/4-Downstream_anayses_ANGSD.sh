@@ -213,3 +213,18 @@ done
 ~/TOOLS/angsd/misc/realSFS fst stats ./REGIONS/CORE.EDGE_intersect_prunned_Fst.fst.idx # 0.017217 0.022925
 ~/TOOLS/angsd/misc/realSFS fst stats ./REGIONS/CORE.MARGIN_intersect_prunned_Fst.fst.idx # 0.023190 0.027451
 ~/TOOLS/angsd/misc/realSFS fst stats ./REGIONS/MARGIN.EDGE_intersect_prunned_Fst.fst.idx # 0.031392 0.027267
+
+
+#######################################################
+##### Preparing a 3D SFS for demographic analysis #####
+
+## 3DSFS estimate for demographic analysis
+# Intersected sites
+~/TOOLS/angsd/misc/realSFS dadi -P 8 ./REGIONS/CORE/CORE_intersect.saf.idx ./REGIONS/MARGIN/MARGIN_intersect.saf.idx ./REGIONS/EDGE/EDGE_intersect.saf.idx -sfs ./REGIONS/CORE/CORE_intersect.sfs -sfs ./REGIONS/MARGIN/MARGIN_intersect.sfs -sfs ./REGIONS/EDGE/EDGE_intersect.sfs -ref ~/mydata/Thibaut/WES_mapping/ReferenceGenomes/WES_RedSpurce_Pglauca_reduced_reference.fna -anc ~/mydata/Thibaut/WES_mapping/ReferenceGenomes/WES_RedSpurce_Pglauca_reduced_reference.fna -nSites 10000000 > ./REGIONS/CORE_MARGIN_EDGE_intersect.sfs
+# Pruned sites
+~/TOOLS/angsd/misc/realSFS dadi -P 8 ./REGIONS/CORE/CORE_intersect_prunned.saf.idx ./REGIONS/MARGIN/MARGIN_intersect_prunned.saf.idx ./REGIONS/EDGE/EDGE_intersect_prunned.saf.idx -sfs ./REGIONS/CORE/CORE_intersect_prunned.sfs -sfs ./REGIONS/MARGIN/MARGIN_intersect_prunned.sfs -sfs ./REGIONS/EDGE/EDGE_intersect_prunned.sfs -ref ~/mydata/Thibaut/WES_mapping/ReferenceGenomes/WES_RedSpurce_Pglauca_reduced_reference.fna -anc ~/mydata/Thibaut/WES_mapping/ReferenceGenomes/WES_RedSpurce_Pglauca_reduced_reference.fna -nSites 10000000 > ./REGIONS/CORE_MARGIN_EDGE_intersect_prunned.sfs
+
+## Converting the sfs file into dadi like 3D sfs 
+~/mydata/Thibaut/RedSpruce_demography/DADI/ref_Pglauca/realsfs2dadi.pl ./REGIONS/CORE_MARGIN_EDGE_intersect.sfs 178 52 110 > ~/mydata/Thibaut/RedSpruce_demography/DADI/ref_Pglauca/RedSpruce.sfs
+
+

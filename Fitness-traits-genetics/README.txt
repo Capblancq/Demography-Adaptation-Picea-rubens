@@ -1,5 +1,5 @@
 ### Genomic drivers of early-life fitness in Picea rubens
----------------------------------------------------------
+----------------------
 
 This repository gathers the scripts used to conduct the analyses and produce the figures of the study described in Capblancq et al. XX, Conservation Genetics (DOI:XX, XX):
 
